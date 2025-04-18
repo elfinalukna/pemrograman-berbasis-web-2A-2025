@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Sekarang - Cafe FINATURE</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefae0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      font-family: cursive;
+      color: #bc6c25;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 400px;
+      margin:auto;
+      background-color: white;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    select, input, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4cae4c;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 15px;
+    }
+
+    .footer-nav a {
+        background-color:blanchedalmond;
+        padding: 15px 30px;
+        color:indianred;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .footer-nav a:hover {
+        background-color: #d07d59;
+        transform: scale(1.05); 
+    }
+    a {
+      text-decoration: none;
+      color: #bc6c25;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pesan Sekarang</h1>
+  </header>
+
+  <div class="container">
+    <form>
+      <label for="menu">Pilih Menu:</label>
+      <select id="menu" name="menu">
+        <option value="espresso">Espresso - Rp 18.000</option>
+        <option value="americano">Americano - Rp 20.000</option>
+        <option value="cappuccino">Cappuccino - Rp 25.000</option>
+        <option value="manual_brew">Manual Brew - Rp 22.000</option>
+        <option value="vanilla_latte">Vanilla Latte - Rp 28.000</option>
+        <option value="caramel_latte">Caramel Latte - Rp 30.000</option>
+        <option value="hazelnut_latte">Hazelnut Latte - Rp 30.000</option>
+        <option value="matcha_latte">Matcha Latte - Rp 32.000</option>
+      </select>
+
+      <label for="quantity">Jumlah:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" placeholder="Nama kamu" required>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </div>
+
+  <div class="footer-nav">
+    <a href="cob.html"> Kembali</a>
+  </div>
+
+</body>
+</html>
