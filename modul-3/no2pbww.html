@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KampusNews</title>
+    <meta name="description" content=" website berita kampus">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1e3a8a',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <section class="bg-gradient-to-r from-primary to-secondary text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
+          
+          <div class="md:w-1/2 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-white">Berita Kampus</h1>
+            <p class="text-xl mb-4 text-white"></p>
+            <div class="flex flex-col sm:flex-row sm:justify-center sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+  
+              <a href="#berita" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-white hover:text-blue-800 transition duration-300">
+                Berita Terkini
+              </a>
+            </div>
+          </div>
+      
+          <div class="md:w-1/2 flex justify-center">
+            <img src="https://i.pinimg.com/736x/71/eb/1a/71eb1ab0df73757d225de23d6f39c907.jpg" 
+                 alt="Website Berita Kampus" 
+                 class="rounded-lg shadow-2xl max-w-full h-auto">
+          </div>
+        </div>
+      </section>
+    <section id="berita" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Berita Terkini</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12"> </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://i.pinimg.com/736x/8e/70/a5/8e70a5773b2ede7eb88a3c30e5602e4c.jpg" 
+                         alt="Kegiatan Kampus" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-primary font-medium">KEGIATAN</span>
+                        <h3 class="text-xl font-semibold my-2">60 Talks: Sharing Hearing #AussieBangetCorner Bangkitkan Semangat Global di UTM</h3>
+                        <p class="text-primary"><a href="https://www.trunojoyo.ac.id/60-talks-sharing-hearing-aussiebangetcorner-bangkitkan-semangat-global-di-utm/">Baca selengkapnya...</a></p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i>
+                            <span>2 jam yang lalu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://i.pinimg.com/736x/a6/ad/28/a6ad282350b5ff83bf61f19ac47c259a.jpg" 
+                         alt="Seminar Kampus" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-primary font-medium">ACARA</span>
+                        <h3 class="text-xl font-semibold my-2">UTM Terima Kunjungan Cabang Dinas Pendidikan Bangkalan, Dorong Peningkatan Akses ke Perguruan Tinggi</h3>
+                        <p class="text-primary"> <a href="https://www.trunojoyo.ac.id/utm-terima-kunjungan-cabang-dinas-pendidikan-bangkalan-dorong-peningkatan-akses-ke-perguruan-tinggi/">Baca Selengkapnya..</a></p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i>
+                            <span>Kemarin</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Berita 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://i.pinimg.com/736x/91/1d/14/911d14e16d05c0440f15ce35ba05a1ee.jpg" 
+                         alt="Prestasi Kampus" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-primary font-medium">INFORMASI</span>
+                        <h3 class="text-xl font-semibold my-2">PENGUMUMAN PENERIMAAN MAHASISWA BARU SELEKSI MANDIRI JALUR PRESTASI (TAHFIZH) DAN JALUR PRESTASI (QIRA’ATUL KUTUB) UNIVERSITAS TRUNOJOYO MADURA TAHUN 2025</h3>
+                        <p class="text-primary"><a href="penerimaan-mahasiswa-baru-seleksi-mandiri-jalur-prestasi-tahfizh-dan-jalur-prestasi-qiraatul-kutub-universitas-trunojoyo-madura-tahun-2025/"> Baca selengkapnya...</a></p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i class="far fa-clock mr-1"></i>
+                            <span>3 hari lalu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="flex justify-center space-x-20 mt-10 text-center text-lg ">
+        <div class="space-y-2">
+          <h4 class="font-bold">Email</h4>
+          <p>Kampuskitajaya@email.com</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold">Instagram</h4>
+          <p>@kampus.jaya</p>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-bold">WhatsApp</h4>
+          <p>+62 822-3030-7949</p>
+        </div>
+      </div>
+  
+  
+      <footer class="bg-gray-300 text-center text-gray-600 py-4">
+        © 2025 KampusNews. All rights reserved.
+      </footer>
+    
+
+</body>
+</html>
